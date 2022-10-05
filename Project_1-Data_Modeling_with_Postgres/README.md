@@ -15,14 +15,14 @@ They'd like a data engineer to create a Postgres database with tables designed t
 
 ## Shcema design
 
+![schema](./schema.png)
+
 ## ETL pipeline
 
 1. Process `song_data` to create `songs` and `artists` tables first
 2. Process `log_data` to create `time` and `users` tables. They are the dimensional tables. Also we create `songplays` fact table.
 
 ## Dataset
-
-![schema](./schema.png)
 
 ### Song Dataset
 
