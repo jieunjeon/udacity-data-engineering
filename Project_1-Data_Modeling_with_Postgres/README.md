@@ -8,17 +8,21 @@ They'd like a data engineer to create a Postgres database with tables designed t
 
 ## How to run the code
 
-...
+1. Create PSQL Database `sparkifydb`
+2. Run `create_tables.py`
+3. run `etl.py`
+4. Check the database with `test.ipynb`
 
 ## Shcema design
 
-...
-
 ## ETL pipeline
 
-...
+1. Process `song_data` to create `songs` and `artists` tables first
+2. Process `log_data` to create `time` and `users` tables. They are the dimensional tables. Also we create `songplays` fact table.
 
 ## Dataset
+
+![schema](./schema.png)
 
 ### Song Dataset
 
