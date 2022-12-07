@@ -1,4 +1,4 @@
-# Data Modeling with Apache Cassandra
+# Implementing Data Warehouses on AWS
 
 ## Introduction
 
@@ -62,3 +62,23 @@ Dimension Tables
 ## Redshift Dashboard
 ![redshift-1](./redshift-1.png)
 ![redshift-2](./redshift-2.png)
+
+### AWS Credentials
+To actually run this, you need your own AWS credentials in `./dwh.cfg` config file. The Format is as follows:
+
+```
+[CLUSTER]
+HOST=
+DB_NAME='dwh'
+DB_USER='dwhuser'
+DB_PASSWORD=
+DB_PORT=
+
+[IAM_ROLE]
+ARN=
+
+[S3]
+LOG_DATA=
+LOG_JSONPATH=
+SONG_DATA=
+```
